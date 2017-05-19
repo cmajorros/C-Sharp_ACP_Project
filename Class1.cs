@@ -21,12 +21,8 @@ namespace AccessoryPower_Final
         public string database;
         public string uid;
         public string password;
-        //public string MAXID ;
         public DataTable dt = new DataTable() ;
-        //public DataSet ds = new DataSet();
-
-        //Constructor
-        public DBConnect()
+           public DBConnect()
         {
             Initialize();
         }
@@ -43,9 +39,7 @@ namespace AccessoryPower_Final
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
             connection = new MySqlConnection(connectionString);
-            //connection.Open();
-           
-            // insert 
+
         }
 
             public void Insertdata( string insertcommand )
