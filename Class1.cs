@@ -30,10 +30,10 @@ namespace AccessoryPower_Final
         //Initialize values
         public void Initialize()
         {
-            server = "173.230.154.176";
-            database = "devacce_testing2";
-            uid = "devacce_testdev2";
-            password = "bcKz6XXbBjQqULC2";
+            server = "xxx.xxx.xxx.xxx";
+            database = "ACP_testing";
+            uid = "ACP_test";
+            password = "abcdefghi";
             string connectionString;
             connectionString = "PORT=3307;SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
@@ -42,6 +42,7 @@ namespace AccessoryPower_Final
 
         }
 
+        //for Inserting any tables
             public void Insertdata( string insertcommand )
             {
                 connection.Open();
@@ -54,7 +55,7 @@ namespace AccessoryPower_Final
 
  
             }
-
+        //for update any table
             public void Updatedata(string updatecommand)
             {
                 connection.Open();
@@ -63,6 +64,7 @@ namespace AccessoryPower_Final
                 connection.Close();
                 
             }
+        // for delete any table
 
             public void Deletedata(string deletecommand)
             {
@@ -74,7 +76,7 @@ namespace AccessoryPower_Final
                 sql.ExecuteNonQuery();
                 connection.Close();
             }
-        
+        // for retriving and ID from any table
             public string FindMaxID(string FindID)
             {
                               
@@ -91,6 +93,7 @@ namespace AccessoryPower_Final
                 LastID = (dt.Rows[0][0]).ToString();
                 return LastID;
             }
+        // for geting the data from database
             public DataSet SelectData(string ID)
             {
                 DataSet ds = new DataSet();
