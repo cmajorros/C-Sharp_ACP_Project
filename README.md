@@ -7,5 +7,18 @@ I use MySQL for the database, but sorry I could not provide you the database fil
 an assignment from an employer for testing the new recruitment in C# developer. I still have some bugs in 
 deleting the data. 
 
+Basically, there are 5 tables used for this project
+1) Products
+2) Parts
+3) Inventory
+4) Kit_Relations
+
+All Products must have parts and cannot exist without parts and a product can be a kit and can have many kits
+and Parts have the relationships with inventory. 
+Whenever part is delelted all tables which related to parts such as Products, Inventory and kit relations will 
+be deleted as well. 
+
+
+
 Best Regards,
 Siroros R.
