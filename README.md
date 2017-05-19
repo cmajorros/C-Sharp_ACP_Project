@@ -13,10 +13,13 @@ Basically, there are 5 tables used for this project
 3) Inventory
 4) Kit_Relations
 
+
 All Products must have parts and cannot exist without parts and a product can be a kit and can have many kits
 and Parts have the relationships with inventory. 
 Whenever part is delelted all tables which related to parts such as Products, Inventory and kit relations will 
 be deleted as well. 
+
+For full project can be downloaded at https://www.dropbox.com/sh/br8upan1stz3xzt/AADZ8d3b16VtJO0CnZd7EFtOa?dl=0
 
 
 
